@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url("/src/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 400; /* Normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/src/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* Button */
+.btn {
+  @apply px-6 py-3 bg-highlight text-white;
+}
+
+/* Section */
+.kk-section {
+  @apply max-w-screen-2xl mx-auto px-8 py-4 mb-32;
+}
+
+/* Scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+
+/* Transparent background */
+.kk-dark-transparent-bg {
+  @apply bg-slate-700 bg-opacity-20;
+}
