@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 
 export const ProductContext = createContext();
 
-export const Provider = ({ children }) => {
+export const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState(null);
   const [wishList, setWishList] = useState(JSON.parse(window.localStorage.getItem("TechRentWishList")) || []);
   const [shoppingCart, setShoppingCart] = useState(
