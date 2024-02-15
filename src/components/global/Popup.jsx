@@ -7,6 +7,8 @@ import { PopupContext } from "../../provider/PopupContext";
 // Components
 import WishList from "../navbar/WishList";
 import ShoppingCart from "../navbar/ShoppingCart";
+import SignIn from "../navbar/SignIn";
+import Login from "../navbar/Login";
 
 const Popup = () => {
   const { showPopup, setShowPopup, setDarkBackground } = useContext(PopupContext);
@@ -15,6 +17,8 @@ const Popup = () => {
   const components = {
     wishList: WishList,
     shoppingCart: ShoppingCart,
+    signIn: SignIn,
+    login: Login,
   };
 
   const ComponentToRender = components[showPopup];
