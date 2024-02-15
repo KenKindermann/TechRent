@@ -10,6 +10,7 @@ import logo from "../../assets/images/logo.png";
 // Components
 import NavbarLinks from "./NavbarLinks";
 import Searchbar from "./Searchbar";
+import Badge from "../global/Badge";
 
 const Navbar = () => {
   const { wishList, shoppingCart, showSearch } = useContext(ProductContext);
@@ -30,6 +31,34 @@ const Navbar = () => {
         </div>
 
         <NavbarLinks showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav} />
+
+        <div
+          className={
+            showMobileNav ? `absolute top-3 left-1/2 -translate-x-1/2 flex gap-4 ` : `flex gap-4 hidden sm:flex`
+          }
+        >
+          <div className="my-auto relative w-6" onClick={() => openPopup("wishList")}>
+            {wishList.length > 0 && <Badge />}
+            <img
+              src="/src/assets/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="wishlist icon"
+              className="cursor-pointer"
+            />
+          </div>
+
+          <div className="my-auto relative w-6" onClick={() => openPopup("shoppingCart")}>
+            {shoppingCart.length > 0 && <Badge />}
+            <img
+              src="/src/assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="shopping cart icon"
+              className="cursor-pointer"
+            />
+          </div>
+
+          <button className="btn whitespace-nowrap" onClick={() => openPopup("signIn")}>
+            Sign up
+          </button>
+        </div>
       </div>
     </nav>
   );
