@@ -10,6 +10,7 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/main/Hero";
 import ProductOverview from "./components/main/ProductOverview";
 import CarePlus from "./components/main/CarePlus";
+import Newsletter from "./components/main/Newsletter";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <ProductOverview title={"Deals of the Week"} productGroup={"dealsOfTheWeek"} />
       <CarePlus />
       <ProductOverview title={"Popular"} productGroup={"popular"} />
+      <Newsletter />
 
       <Popup />
     </div>
