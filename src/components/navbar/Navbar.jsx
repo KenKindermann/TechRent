@@ -9,6 +9,7 @@ import logo from "../../assets/images/logo.png";
 
 // Components
 import NavbarLinks from "./NavbarLinks";
+import Searchbar from "./Searchbar";
 
 const Navbar = () => {
   const { wishList, shoppingCart, showSearch } = useContext(ProductContext);
@@ -25,6 +26,7 @@ const Navbar = () => {
             onClick={() => navigate("/")}
             className="cursor-pointer"
           />
+          <Searchbar />
         </div>
 
         <NavbarLinks showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav} />

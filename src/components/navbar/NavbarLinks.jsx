@@ -18,7 +18,7 @@ const NavbarLinks = ({ showMobileNav, setShowMobileNav }) => {
     <ul
       className={`flex gap-8 whitespace-nowrap ${
         showMobileNav
-          ? `absolute inset-0 w-full h-full bg-slate-900 flex-col items-center justify-center transition-transform	`
+          ? `absolute inset-0 w-full h-full bg-slate-900 flex-col items-center justify-center transition-transform`
           : `-translate-x-full sm:-translate-x-0`
       }`}
     >
