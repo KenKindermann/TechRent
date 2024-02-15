@@ -4,9 +4,7 @@ import { useEffect } from "react";
 const useOverflow = (overflowContainer, state) => {
   useEffect(() => {
     const checkOverflow = () => {
-      if (overflowContainer.current) {
-        overflowContainer?.current.scrollWidth > overflowContainer.current.clientWidth ? state(true) : state(false);
-      }
+      overflowContainer?.current.scrollWidth > overflowContainer.current.clientWidth ? state(true) : state(false);
     };
 
     setTimeout(checkOverflow, 100);
