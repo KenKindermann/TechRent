@@ -11,6 +11,7 @@ import logo from "../../assets/images/logo.png";
 import NavbarLinks from "./NavbarLinks";
 import Searchbar from "./Searchbar";
 import Badge from "../global/Badge";
+import ToggleBar from "./Togglebar";
 
 const Navbar = () => {
   const { wishList, shoppingCart, showSearch } = useContext(ProductContext);
@@ -64,6 +65,9 @@ const Navbar = () => {
             Sign up
           </button>
         </div>
+
+        {/* Toggle Button */}
+        <ToggleBar setShowMobileNav={setShowMobileNav} />
       </div>
     </nav>
   );
