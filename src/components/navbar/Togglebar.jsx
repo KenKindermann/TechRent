@@ -1,4 +1,4 @@
-const ToggleButton = ({ setShowMobileNav }) => {
+const ToggleBar = ({ setShowMobileNav }) => {
   return (
     <div className="w-6 h-5 flex flex-col justify-between sm:hidden" onClick={() => setShowMobileNav(true)}>
       <span className="bg-white h-0.5 "></span>
@@ -8,4 +8,4 @@ const ToggleButton = ({ setShowMobileNav }) => {
   );
 };
 
-export default ToggleButton;
+export default ToggleBar;
