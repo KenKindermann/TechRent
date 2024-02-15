@@ -13,6 +13,7 @@ import CarePlus from "./components/main/CarePlus";
 import Newsletter from "./components/main/Newsletter";
 import Benefits from "./components/main/Benefits";
 import Contact from "./components/main/Contact";
+import Faq from "./components/main/Faq";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Benefits />
       <Popup />
       <Contact />
+      <Faq />
     </div>
   );
 }
