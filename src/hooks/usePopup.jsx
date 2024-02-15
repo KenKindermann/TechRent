@@ -2,7 +2,7 @@
 import { useContext } from "react";
 
 // Context
-import { PopupContext } from "../../provider/PopupContext";
+import { PopupContext } from "../provider/PopupContext";
 
 const usePopup = () => {
   const { showPopup, setShowPopup, setDarkBackground } = useContext(PopupContext);
