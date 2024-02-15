@@ -1,8 +1,8 @@
 import { createContext, useState } from "react";
 
-export const ProductContext = createContext();
+export const PopupContext = createContext();
 
-export const Provider = ({ children }) => {
+export const PopupProvider = ({ children }) => {
   const [showSearch, setShowSearch] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [darkBackground, setDarkBackground] = useState(false);
@@ -16,5 +16,5 @@ export const Provider = ({ children }) => {
     setShowPopup,
   };
 
-  return <ProductContext.Provider value={value}>{children}</ProductContext.Provider>;
+  return <PopupContext.Provider value={value}>{children}</PopupContext.Provider>;
 };
