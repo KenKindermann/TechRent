@@ -1,5 +1,6 @@
 // Hooks
 import { useContext, useState } from "react";
+import usePopup from "../../hooks/usePopup";
 
 // Context
 import { ProductContext } from "../../provider/ProductContext";
@@ -15,6 +16,7 @@ import ToggleBar from "./Togglebar";
 
 const Navbar = () => {
   const { wishList, shoppingCart, showSearch } = useContext(ProductContext);
+  const { openPopup } = usePopup();
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
@@ -61,7 +63,7 @@ const Navbar = () => {
           </div>
 
           {/* Sign up */}
-          <button className="btn whitespace-nowrap" onClick={() => openPopup("signIn")}>
+          <button className="btn whitespace-nowrap cursor-pointer" onClick={() => openPopup("signIn")}>
             Sign up
           </button>
         </div>
