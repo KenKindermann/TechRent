@@ -9,6 +9,7 @@ import Popup from "./components/global/Popup";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/main/Hero";
 import ProductOverview from "./components/main/ProductOverview";
+import CarePlus from "./components/main/CarePlus";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       </Routes>
 
       <ProductOverview title={"Deals of the Week"} productGroup={"dealsOfTheWeek"} />
+      <CarePlus />
       <ProductOverview title={"Popular"} productGroup={"popular"} />
 
       <Popup />
