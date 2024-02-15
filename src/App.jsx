@@ -19,6 +19,7 @@ function App() {
       </Routes>
 
       <ProductOverview title={"Deals of the Week"} productGroup={"dealsOfTheWeek"} />
+      <ProductOverview title={"Popular"} productGroup={"popular"} />
 
       <Popup />
     </div>
