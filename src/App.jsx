@@ -12,6 +12,7 @@ import ProductOverview from "./components/main/ProductOverview";
 import CarePlus from "./components/main/CarePlus";
 import Newsletter from "./components/main/Newsletter";
 import Benefits from "./components/main/Benefits";
+import Contact from "./components/main/Contact";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Newsletter />
       <Benefits />
       <Popup />
+      <Contact />
     </div>
   );
 }
