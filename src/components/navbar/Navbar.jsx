@@ -1,5 +1,5 @@
 // Hooks
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 // Context
 import { ProductContext } from "../../provider/ProductContext";
@@ -7,8 +7,12 @@ import { ProductContext } from "../../provider/ProductContext";
 // Images
 import logo from "../../assets/images/logo.png";
 
+// Components
+import NavbarLinks from "./NavbarLinks";
+
 const Navbar = () => {
   const { wishList, shoppingCart, showSearch } = useContext(ProductContext);
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
     <nav className="bg-slate-700 shadow-md shadow-slate-600 bg-opacity-20 w-full">
@@ -22,6 +26,8 @@ const Navbar = () => {
             className="cursor-pointer"
           />
         </div>
+
+        <NavbarLinks showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav} />
       </div>
     </nav>
   );
