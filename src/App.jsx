@@ -11,6 +11,7 @@ import Hero from "./components/main/Hero";
 import ProductOverview from "./components/main/ProductOverview";
 import CarePlus from "./components/main/CarePlus";
 import Newsletter from "./components/main/Newsletter";
+import Benefits from "./components/main/Benefits";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       <CarePlus />
       <ProductOverview title={"Popular"} productGroup={"popular"} />
       <Newsletter />
-
+      <Benefits />
       <Popup />
     </div>
   );
