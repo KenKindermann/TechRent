@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Popup from "./components/global/Popup";
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/main/Hero";
+import ProductOverview from "./components/main/ProductOverview";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />
       </Routes>
+
+      <ProductOverview title={"Deals of the Week"} productGroup={"dealsOfTheWeek"} />
+
       <Popup />
     </div>
   );
