@@ -14,6 +14,7 @@ import Newsletter from "./components/main/Newsletter";
 import Benefits from "./components/main/Benefits";
 import Contact from "./components/main/Contact";
 import Faq from "./components/main/Faq";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Popup />
       <Contact />
       <Faq />
+      <Footer />
     </div>
   );
 }
