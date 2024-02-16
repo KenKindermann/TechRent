@@ -14,6 +14,7 @@ import Newsletter from "./components/main/Newsletter";
 import Benefits from "./components/main/Benefits";
 import Contact from "./components/main/Contact";
 import Faq from "./components/main/Faq";
+import DarkBackground from "./components/global/DarkBackground";
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Popup />
       <Contact />
       <Faq />
+      <DarkBackground />
       <Footer />
     </div>
   );
