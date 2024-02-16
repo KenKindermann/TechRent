@@ -32,6 +32,7 @@ function App() {
   return (
     <div className="page-content bg-gradient-to-b from-dark-blue to-stone-800 text-white font-roboto">
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/:productGroup/:title/:id" element={<ProductView key={window.location.pathname} />} />
@@ -42,11 +43,12 @@ function App() {
       <ProductOverview title={"Popular"} productGroup={"popular"} />
       <Newsletter />
       <Benefits />
-      <Popup />
       <Contact />
       <Faq />
-      <DarkBackground />
       <Footer />
+
+      <DarkBackground />
+      <Popup />
     </div>
   );
 }
