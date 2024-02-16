@@ -55,7 +55,7 @@ const ProductView = () => {
           <div className="bg-slate-700 bg-opacity-20 w-full lg:w-3/5 p-8">
             <h2 className="text-2xl text-highlight font-bold">{product.title}</h2>
             <p className="text-slate-300">{product.description}</p>
-            <Colors colors={product.colors} currentColor={currentColor} />
+            <Colors colors={product.colors} currentColor={currentColor} setCurrentColor={setCurrentColor} />
             <RentalPeriod
               productPrices={product.prices}
               currentPrice={currentPrice}
