@@ -16,6 +16,7 @@ import Contact from "./components/main/Contact";
 import Faq from "./components/main/Faq";
 import DarkBackground from "./components/global/DarkBackground";
 import Footer from "./components/footer/Footer";
+import ProductView from "./components/product-page/ProductView";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Hero />} />
+        <Route path="/:productGroup/:title/:id" element={<ProductView key={window.location.pathname} />} />
       </Routes>
 
       <ProductOverview title={"Deals of the Week"} productGroup={"dealsOfTheWeek"} />
