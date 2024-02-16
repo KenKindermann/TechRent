@@ -11,6 +11,7 @@ const ImageGallery = ({ images }) => {
       <div className="flex justify-center mt-4 gap-4">
         {images?.map((image) => (
           <div
+            key={image.fields.title}
             className="bg-slate-700 bg-opacity-20 hover:bg-opacity-40 cursor-pointer transition ease-in-out p-2"
             onMouseEnter={() => setCurrentImg(image.fields.file.url)}
           >
