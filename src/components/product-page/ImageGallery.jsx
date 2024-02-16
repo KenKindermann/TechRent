@@ -15,7 +15,11 @@ const ImageGallery = ({ images }) => {
             className="bg-slate-700 bg-opacity-20 hover:bg-opacity-40 cursor-pointer transition ease-in-out p-2"
             onMouseEnter={() => setCurrentImg(image.fields.file.url)}
           >
-            <img src={image.fields.file.url} alt="" style={{ height: "80px", width: "80px", objectFit: "contain" }} />
+            <img
+              src={image.fields.file.url}
+              alt={image.fields.title}
+              style={{ height: "80px", width: "80px", objectFit: "contain" }}
+            />
           </div>
         ))}
       </div>
