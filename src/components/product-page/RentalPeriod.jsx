@@ -11,7 +11,7 @@ const RentalPeriod = ({ currentPrice, setCurrentPrice, productPrices }) => {
       <h3 className="text-xl mt-6">Choose your rental period</h3>
       {rentalPeriods.map((period) => (
         <button
-          key={rentalPeriods.key}
+          key={period.key}
           className={`mr-4 px-4 py-2 min-w-28 mb-2 sm:mb-0 ${
             currentPrice === productPrices[period.key] ? "bg-highlight" : "bg-slate-800"
           }`}
