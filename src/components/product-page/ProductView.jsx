@@ -11,7 +11,9 @@ import { findIndexInArray, isObjectInArray } from "../../utils/arrayHelpers.js";
 //Components
 import Colors from "./Colors";
 import RentalPeriod from "./RentalPeriod";
-import ImgGallery from "./ImgGallery";
+import ImageGallery from "./ImageGallery";
+import CarePlus from "./CarePlus.jsx";
+import Delivery from "./Delivery.jsx";
 
 const ProductView = () => {
   const { products, shoppingCart, setShoppingCart } = useContext(ProductContext);
@@ -48,7 +50,7 @@ const ProductView = () => {
       <>
         <section className="kk-section mt-24 flex flex-col items-center justify-center lg:flex-row gap-8">
           <div className="w-full lg:w-2/5 flex flex-col justify-between">
-            <ImgGallery images={product.images} />
+            <ImageGallery images={product.images} />
           </div>
           <div className="bg-slate-700 bg-opacity-20 w-full lg:w-3/5 p-8">
             <h2 className="text-2xl text-highlight font-bold">{product.title}</h2>
@@ -59,6 +61,12 @@ const ProductView = () => {
               currentPrice={currentPrice}
               setCurrentPrice={setCurrentPrice}
             />
+            <CarePlus
+              priceWithCarePlus={priceWithCarePlus}
+              setPriceWithCarePlus={setPriceWithCarePlus}
+              carePlusPrice={product.prices.carePlus}
+            />
+            <Delivery />
 
             <p className="mt-16 text-xl">
               only{" "}
