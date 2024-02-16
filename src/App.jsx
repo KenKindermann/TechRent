@@ -1,8 +1,11 @@
 // CSS
 import "./App.css";
 
+// Hooks
+import { useEffect } from "react";
+
 // Router
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 // Components
 import Popup from "./components/global/Popup";
@@ -19,9 +22,17 @@ import Footer from "./components/footer/Footer";
 import ProductView from "./components/product-page/ProductView";
 
 function App() {
+  const { pathname } = useLocation();
+
+  /* Scroll to page start when pathname changes */
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="page-content bg-gradient-to-b from-dark-blue to-stone-800 text-white font-roboto">
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/:productGroup/:title/:id" element={<ProductView key={window.location.pathname} />} />
@@ -32,11 +43,12 @@ function App() {
       <ProductOverview title={"Popular"} productGroup={"popular"} />
       <Newsletter />
       <Benefits />
-      <Popup />
       <Contact />
       <Faq />
-      <DarkBackground />
       <Footer />
+
+      <DarkBackground />
+      <Popup />
     </div>
   );
 }

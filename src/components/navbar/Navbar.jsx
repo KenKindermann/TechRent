@@ -1,5 +1,6 @@
 // Hooks
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import usePopup from "../../hooks/usePopup";
 
 // Context
@@ -18,6 +19,8 @@ const Navbar = () => {
   const { wishList, shoppingCart, showSearch } = useContext(ProductContext);
   const { openPopup } = usePopup();
   const [showMobileNav, setShowMobileNav] = useState(false);
+
+  const navigate = useNavigate();
 
   return (
     <nav className="bg-slate-700 shadow-md shadow-slate-600 bg-opacity-20 w-full">
