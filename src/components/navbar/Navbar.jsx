@@ -7,9 +7,9 @@ import usePopup from "../../hooks/usePopup";
 import { ProductContext } from "../../provider/ProductContext";
 
 // Images
-import logo from "../../assets/images/logo.png";
-import wishlistIcon from "../../assets/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg";
-import shoppingCartIcon from "../../assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg";
+import logo from "../../../public/images/logo.png";
+import wishlistIcon from "../../../public/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg";
+import shoppingCartIcon from "../../../public/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg";
 
 // Components
 import NavbarLinks from "./NavbarLinks";

@@ -1,7 +1,7 @@
 // Images
-import infinity from "../assets/images/infinity.png";
-import flexibility from "../assets/images/flexibility.png";
-import security from "../assets/images/security.png";
+import infinity from "../../public/images/infinity.png";
+import flexibility from "../../public/images/flexibility.png";
+import security from "../../public/images/security.png";
 
 const BenefitsData = [
   {

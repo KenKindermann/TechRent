@@ -1,7 +1,7 @@
 // Images
-import destruction from "../../assets/icons/destruction_FILL0_wght400_GRAD0_opsz24.svg";
-import wrist from "../../assets/icons/wrist_FILL0_wght400_GRAD0_opsz24.svg";
-import factory from "../../assets/icons/factory_FILL0_wght400_GRAD0_opsz24.svg";
+import destruction from "../../../public/icons/destruction_FILL0_wght400_GRAD0_opsz24.svg";
+import wrist from "../../../public/icons/wrist_FILL0_wght400_GRAD0_opsz24.svg";
+import factory from "../../../public/icons/factory_FILL0_wght400_GRAD0_opsz24.svg";
 
 const CarePlus = () => {
   return (

@@ -6,7 +6,7 @@ import { PopupContext } from "../../provider/PopupContext";
 import { ProductContext } from "../../provider/ProductContext";
 
 // Images
-import searchIcon from "../../assets/icons/search_FILL0_wght400_GRAD0_opsz24.svg";
+import searchIcon from "../../../public/icons/search_FILL0_wght400_GRAD0_opsz24.svg";
 
 // Components
 import SearchResult from "./SearchResult";

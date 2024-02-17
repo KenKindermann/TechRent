@@ -3,8 +3,8 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 // Images
-import favoritePink from "../../assets/icons/favorite_FILLPINK_wght400_GRAD0_opsz24.svg";
-import favoriteWhite from "../../assets/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg";
+import favoritePink from "../../../public/icons/favorite_FILLPINK_wght400_GRAD0_opsz24.svg";
+import favoriteWhite from "../../../public/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg";
 
 // Context
 import { PopupContext } from "../../provider/PopupContext";
