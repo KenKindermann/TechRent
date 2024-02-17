@@ -53,7 +53,7 @@ const ProductView = () => {
             <ImageGallery images={product.images} />
           </div>
           <div className="bg-slate-700 bg-opacity-20 w-full lg:w-3/5 p-8">
-            <h2 className="text-2xl text-highlight font-bold">{product.title}</h2>
+            <h2 className="text-2xl text-highlight font-medium">{product.title}</h2>
             <p className="text-slate-300">{product.description}</p>
             <Colors colors={product.colors} currentColor={currentColor} setCurrentColor={setCurrentColor} />
             <RentalPeriod
@@ -70,7 +70,7 @@ const ProductView = () => {
 
             <p className="mt-16 text-xl">
               only{" "}
-              <span className="text-3xl text-highlight font-bold">
+              <span className="text-3xl text-highlight font-medium">
                 {priceWithCarePlus ? Math.round((currentPrice + product.prices.carePlus) * 100) / 100 : currentPrice}€
               </span>{" "}
               per month

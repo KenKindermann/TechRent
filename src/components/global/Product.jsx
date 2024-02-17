@@ -47,12 +47,12 @@ const Product = ({ product, quantity }) => {
       </div>
       <div className="h-1/3 flex flex-col justify-between">
         <div>
-          <h3 className="font-bold mt-4">{product.title}</h3>
+          <h3 className="font-medium mt-4">{product.title}</h3>
           <p className="text-slate-200 text-sm">{product.description}</p>
         </div>
         <p className="mt-4 text-md">
           ab <span className="line-through text-xl"> {product.prices?.oldPrice}€</span>{" "}
-          <span className="text-xl text-highlight font-bold">{product.prices?.twelveMonth}€</span> per month
+          <span className="text-xl text-highlight font-medium">{product.prices?.twelveMonth}€</span> per month
         </p>
       </div>
 
