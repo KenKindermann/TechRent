@@ -34,7 +34,7 @@ const Searchbar = () => {
         />
         {!showSearch && (
           <img
-            src="/src/assets/icons/search_FILL0_wght400_GRAD0_opsz24.svg"
+            src="/assets/icons/search_FILL0_wght400_GRAD0_opsz24.svg"
             alt="search icon"
             className="absolute right-1 top-2 animate-fade-in"
           />
