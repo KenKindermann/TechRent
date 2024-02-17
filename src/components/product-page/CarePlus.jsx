@@ -1,6 +1,6 @@
 const CarePlus = ({ priceWithCarePlus, setPriceWithCarePlus, carePlusPrice }) => {
   return (
-    <div className="flex gap-2 mt-6">
+    <div className="flex items-center gap-2 mt-6">
       <input
         className="accent-slate-700"
         type="checkbox"
