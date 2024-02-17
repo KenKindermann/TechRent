@@ -1,8 +1,3 @@
-// Images
-import destruction from "../../assets/icons/destruction_FILL0_wght400_GRAD0_opsz24.svg";
-import wrist from "../../assets/icons/wrist_FILL0_wght400_GRAD0_opsz24.svg";
-import factory from "../../assets/icons/factory_FILL0_wght400_GRAD0_opsz24.svg";
-
 const CarePlus = () => {
   return (
     <section id="care-plus" className="kk-section flex flex-col justify-center items-center gap-4">
@@ -16,17 +11,17 @@ const CarePlus = () => {
       {/* Benefits */}
       <ul className="flex gap-8 text-lg text-center">
         <li className="flex flex-col items-center">
-          <img src={destruction} alt="destruction icon" />
+          <img src="/assets/icons/destruction_FILL0_wght400_GRAD0_opsz24.svg" alt="destruction icon" />
           <p>Screen Damage</p>
         </li>
 
         <li className="flex flex-col items-center">
-          <img src={wrist} alt="wrist icon" />
+          <img src="/assets/icons/wrist_FILL0_wght400_GRAD0_opsz24.svg" alt="wrist icon" />
           <p>Theft & Lost</p>
         </li>
 
         <li className="flex flex-col items-center">
-          <img src={factory} alt="factory icon" />
+          <img src="/assets/icons/factory_FILL0_wght400_GRAD0_opsz24.svg" alt="factory icon" />
           <p>Factory failures</p>
         </li>
       </ul>

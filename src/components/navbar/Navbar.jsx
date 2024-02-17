@@ -7,7 +7,7 @@ import usePopup from "../../hooks/usePopup";
 import { ProductContext } from "../../provider/ProductContext";
 
 // Images
-import logo from "../../assets/images/logo.png";
+import logo from "/assets/images/logo.png";
 
 // Components
 import NavbarLinks from "./NavbarLinks";
@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="my-auto relative w-6" onClick={() => openPopup("wishList")}>
             {wishList.length > 0 && <Badge />}
             <img
-              src="/src/assets/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg"
+              src="/assets/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg"
               alt="wishlist icon"
               className="cursor-pointer"
             />
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="my-auto relative w-6" onClick={() => openPopup("shoppingCart")}>
             {shoppingCart.length > 0 && <Badge />}
             <img
-              src="/src/assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+              src="/assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
               alt="shopping cart icon"
               className="cursor-pointer"
             />

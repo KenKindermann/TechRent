@@ -28,8 +28,8 @@ const Popup = () => {
       <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full md:w-3/4 min-h-112 bg-slate-800 shadow-md shadow-slate-400 animate-fade-in ">
         {showPopup && <ComponentToRender />}
         <img
-          src="/src/assets/icons/close_FILL0_wght400_GRAD0_opsz24.svg"
-          alt=""
+          src="/assets/icons/close_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="close button"
           className="absolute top-5 right-5 cursor-pointer"
           onClick={() => {
             setShowPopup(false), setDarkBackground(false);

@@ -1,10 +1,6 @@
 // Hooks
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-
-// Images
-import favoritePink from "../../assets/icons/favorite_FILLPINK_wght400_GRAD0_opsz24.svg";
-import favoriteWhite from "../../assets/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg";
 
 // Context
 import { PopupContext } from "../../provider/PopupContext";
@@ -62,7 +58,11 @@ const Product = ({ product, quantity }) => {
 
       {/* Wishlist heart icon */}
       <img
-        src={`${wishList.some((wishProduct) => wishProduct.id === product.id) ? favoritePink : favoriteWhite}`}
+        src={`${
+          wishList.some((wishProduct) => wishProduct.id === product.id)
+            ? "/assets/icons/favorite_FILLPINK_wght400_GRAD0_opsz24.svg"
+            : "/assets/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg"
+        }`}
         alt="favorite icon"
         className="absolute right-2 top-2 z-10"
         onClick={(event) => addOrRemoveInWishList(event)}
