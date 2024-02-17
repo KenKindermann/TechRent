@@ -25,7 +25,7 @@ const ShoppingCart = () => {
 
   return (
     <div className="relative py-12 flex flex-col gap-8 items-center">
-      <h2 className="text-xl font-semibold">Warenkorb</h2>
+      <h2 className="text-xl">Warenkorb</h2>
       <div
         ref={overflowContainer}
         className="overflow-x-scroll scroll-smooth w-full hide-scrollbar relative"
