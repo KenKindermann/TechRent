@@ -8,6 +8,8 @@ import { ProductContext } from "../../provider/ProductContext";
 
 // Images
 import logo from "../../assets/images/logo.png";
+import wishlistIcon from "../../assets/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg";
+import shoppingCartIcon from "../../assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg";
 
 // Components
 import NavbarLinks from "./NavbarLinks";
@@ -48,21 +50,13 @@ const Navbar = () => {
           {/* Wishlist */}
           <div className="my-auto relative w-6" onClick={() => openPopup("wishList")}>
             {wishList.length > 0 && <Badge />}
-            <img
-              src="/src/assets/icons/favorite_FILL0_wght400_GRAD0_opsz24.svg"
-              alt="wishlist icon"
-              className="cursor-pointer"
-            />
+            <img src={wishlistIcon} alt="wishlist icon" className="cursor-pointer" />
           </div>
 
           {/* Shopping cart */}
           <div className="my-auto relative w-6" onClick={() => openPopup("shoppingCart")}>
             {shoppingCart.length > 0 && <Badge />}
-            <img
-              src="/src/assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
-              alt="shopping cart icon"
-              className="cursor-pointer"
-            />
+            <img src={shoppingCartIcon} alt="shopping cart icon" className="cursor-pointer" />
           </div>
 
           {/* Sign up */}

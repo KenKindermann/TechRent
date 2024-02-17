@@ -5,6 +5,9 @@ import { useContext, useState } from "react";
 import { PopupContext } from "../../provider/PopupContext";
 import { ProductContext } from "../../provider/ProductContext";
 
+// Images
+import searchIcon from "../../assets/icons/search_FILL0_wght400_GRAD0_opsz24.svg";
+
 // Components
 import SearchResult from "./SearchResult";
 
@@ -32,13 +35,7 @@ const Searchbar = () => {
           placeholder="Search..."
           onChange={(event) => searchProduct(event)}
         />
-        {!showSearch && (
-          <img
-            src="/src/assets/icons/search_FILL0_wght400_GRAD0_opsz24.svg"
-            alt="search icon"
-            className="absolute right-1 top-2 animate-fade-in"
-          />
-        )}
+        {!showSearch && <img src={searchIcon} alt="search icon" className="absolute right-1 top-2 animate-fade-in" />}
         {showSearch && (
           <div className="absolute bg-white shadow-md shadow-white animate-fade-in w-full top-10 z-10">
             <hr />
