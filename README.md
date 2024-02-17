@@ -13,6 +13,6 @@ The user-friendly search functionality makes it quick and easy to find the right
 - Tailwind
 - Headless CMS / Contentful
 
-## Screenshots des Projekts 📸
+## Screenshots 📸
 
 ![screenshot](public/assets/images/screenshot.png)
