@@ -1,5 +1,5 @@
 // Images
-import devices from "../../assets/images/devices.png";
+import devices from "/assets/images/devices.png";
 
 const Hero = () => {
   return (
