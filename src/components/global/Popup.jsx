@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { PopupContext } from "../../provider/PopupContext";
 
 // Components
-import WishList from "../navbar/WishList";
+import Wishlist from "../navbar/WishList";
 import ShoppingCart from "../navbar/ShoppingCart";
 import SignIn from "../navbar/SignIn";
 import Login from "../navbar/Login";
@@ -15,7 +15,7 @@ const Popup = () => {
 
   // Components to render
   const components = {
-    wishList: WishList,
+    wishList: Wishlist,
     shoppingCart: ShoppingCart,
     signIn: SignIn,
     login: Login,
