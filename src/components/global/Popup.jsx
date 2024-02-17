@@ -25,7 +25,7 @@ const Popup = () => {
 
   return (
     showPopup && (
-      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full md:w-3/4 min-h-112 bg-slate-800 shadow-md shadow-slate-400 animate-fade-in ">
+      <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full md:w-3/4 min-h-112 bg-slate-800 shadow-md shadow-slate-400 animate-fade-in max-w-screen-xl ">
         {showPopup && <ComponentToRender />}
         <img
           src="/assets/icons/close_FILL0_wght400_GRAD0_opsz24.svg"
