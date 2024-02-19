@@ -10,6 +10,15 @@ export default {
         "dark-blue": "#020024",
         highlight: "#ff0080",
       },
+      animation: {
+        "fade-in": "fadeIn .3s forwards",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
     },
   },
   plugins: [],
