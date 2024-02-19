@@ -19,13 +19,16 @@ const ProductView = () => {
   const { products, shoppingCart, setShoppingCart } = useContext(ProductContext);
   const { productGroup, id } = useParams();
 
+  // Product states
   const [currentPrice, setCurrentPrice] = useState(null);
   const [priceWithCarePlus, setPriceWithCarePlus] = useState(false);
   const [product, setProduct] = useState(null);
   const [currentColor, setCurrentColor] = useState(null);
 
+  // Button text
   const [buttonText, setButtonText] = useState("Add to cart");
 
+  // Set product informations when products and id is changing
   useEffect(() => {
     if (products) {
       const foundedProduct = products[productGroup].find((product) => product.fields.id == id);
@@ -35,11 +38,14 @@ const ProductView = () => {
     }
   }, [products, id]);
 
+  // Add product to shopping cart, display for 2 sec added in button
   const handleClick = (product) => {
     addToShoppingCart(product);
     setButtonText("Added");
     setTimeout(() => setButtonText("Add to cart"), 2000);
   };
+
+  // Add product to shopping cart
   const addToShoppingCart = (product) => {
     if (isObjectInArray(shoppingCart, product)) {
       const index = findIndexInArray(shoppingCart, product);
