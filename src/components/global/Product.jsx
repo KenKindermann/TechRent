@@ -26,10 +26,15 @@ const Product = ({ product, quantity }) => {
 
   // Change quantity in shoppingCart
   const changeQuantity = (product, value) => {
-    const index = findIndexInArray(shoppingCart, product);
-    const newItems = [...shoppingCart];
-    newItems[index].quantity = parseInt(value);
-    setShoppingCart(newItems);
+    if (value === "0") {
+      const updatedShoppingCart = deleteObjectInArray(shoppingCart, product);
+      setShoppingCart(updatedShoppingCart);
+    } else {
+      const index = findIndexInArray(shoppingCart, product);
+      const newItems = [...shoppingCart];
+      newItems[index].quantity = parseInt(value);
+      setShoppingCart(newItems);
+    }
   };
 
   return (
@@ -76,8 +81,8 @@ const Product = ({ product, quantity }) => {
           onChange={(e) => changeQuantity(product, e.target.value)}
         >
           {[...Array(10)].map((_, i) => (
-            <option key={i} value={i + 1}>
-              {i + 1}
+            <option key={i} value={i}>
+              {i}
             </option>
           ))}
         </select>
