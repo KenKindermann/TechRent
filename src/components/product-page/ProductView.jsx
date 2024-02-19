@@ -24,6 +24,8 @@ const ProductView = () => {
   const [product, setProduct] = useState(null);
   const [currentColor, setCurrentColor] = useState(null);
 
+  const [buttonText, setButtonText] = useState("Add to cart");
+
   useEffect(() => {
     if (products) {
       const foundedProduct = products[productGroup].find((product) => product.fields.id == id);
@@ -33,6 +35,11 @@ const ProductView = () => {
     }
   }, [products, id]);
 
+  const handleClick = (product) => {
+    addToShoppingCart(product);
+    setButtonText("Added");
+    setTimeout(() => setButtonText("Add to cart"), 2000);
+  };
   const addToShoppingCart = (product) => {
     if (isObjectInArray(shoppingCart, product)) {
       const index = findIndexInArray(shoppingCart, product);
@@ -75,8 +82,8 @@ const ProductView = () => {
               </span>{" "}
               per month
             </p>
-            <button className="btn mt-4" onClick={() => addToShoppingCart(product)}>
-              Add to cart
+            <button className="btn mt-4 min-w-36" onClick={() => handleClick(product)}>
+              {buttonText}
             </button>
           </div>
         </section>
