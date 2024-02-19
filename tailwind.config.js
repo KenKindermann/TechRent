@@ -10,6 +10,9 @@ export default {
         "dark-blue": "#020024",
         highlight: "#ff0080",
       },
+      spacing: {
+        112: "26rem",
+      },
       animation: {
         "fade-in": "fadeIn .3s forwards",
       },
